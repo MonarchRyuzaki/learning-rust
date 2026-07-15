@@ -1,3 +1,5 @@
+use std::arch::global_asm;
+
 struct Point {
     x: u64,
     y: u64,
@@ -46,6 +48,13 @@ impl State {
     fn process(&mut self, message: Message) {
         // TODO: Create a match expression to process the different message
         // variants using the methods defined above.
+        match message {
+            Message::Resize { width, height } => self.resize(width, height),
+            Message::Move(point) => self.move_position(point),
+            Message::Echo(s) => self.echo(s),
+            Message::ChangeColor(red, green, blue) => self.change_color(red, green, blue),
+            Message::Quit => self.quit(),
+        }
     }
 }
 
