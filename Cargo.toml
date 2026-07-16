@@ -1,3 +1,15 @@
 [workspace]
 resolver = "3"
-members = ["hello_world", "guessing_game", "variables_functions", "rustlings", "slice_type"]
+members = [
+  "hello_world",
+  "guessing_game",
+  "variables_functions",
+  "rustlings",
+  "slice_type", "minigrep",
+]
+
+[profile.release]
+panic = "abort"
+
+[profile.dev]
+panic = "abort"

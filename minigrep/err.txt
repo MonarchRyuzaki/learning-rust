@@ -1,0 +1,3 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.03s
+     Running `/home/ryuzaki/Desktop/Projects/learning-rust/target/debug/minigrep`
+Problem parsing arguements: not enough arguements
