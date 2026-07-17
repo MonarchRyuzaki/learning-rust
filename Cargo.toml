@@ -5,7 +5,7 @@ members = [
   "guessing_game",
   "variables_functions",
   "rustlings",
-  "slice_type", "minigrep", "smart_pointers",
+  "slice_type", "minigrep", "smart_pointers", "hello-async",
 ]
 
 [profile.release]
